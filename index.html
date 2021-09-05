@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>schreckski.com</title>
+</head>
+
+<style>
+    body {
+        background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 255, 255, 0));
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        /* to remove whitespace around closing image */
+        padding: 0;
+        margin: 0;
+
+        font-size: 20pt;
+    }
+
+    .read {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    img#realm-of-schreckski, img#closing {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    img#closing {
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    }
+
+    img#roller-pano {
+        width: 100%;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5% 95%, rgba(0, 0, 0, 0));
+    }
+
+    /* WHO start */
+    div#who-section {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start; /* prevent image stretch */
+    }
+
+    div#who-section > * {
+        margin: 1%;
+    }
+    img#who-img {
+        flex-basis: 48%;
+        flex-grow: 1;
+        /*flex-shrink: 0;*/
+        width: 100%;
+        height: auto;
+    }
+    div#who-text {
+        flex-basis: 48%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 100%;
+        min-width: 200pt;
+    }
+    /* WHO end */
+
+    /* SKIS start */
+    div#skis-section {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start; /* prevent image stretch */
+    }
+
+    div#skis-section > * {
+        margin: 1%;
+    }
+    img#skis-img {
+        flex-basis: 48%;
+        flex-grow: 1;
+        /*flex-shrink: 0;*/
+        width: 100%;
+        height: auto;
+    }
+    div#skis-text {
+        flex-basis: 48%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 100%;
+        min-width: 200pt;
+    }
+    /* SKIS end */
+
+    /* WHAT start */
+    div#what-section {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start; /* prevent image stretch */
+    }
+
+    div#what-section > * {
+        margin: 1%;
+    }
+    img#what-img {
+        flex-basis: 48%;
+        flex-grow: 1;
+        /*flex-shrink: 0;*/
+        width: 100%;
+        height: auto;
+    }
+    div#what-text {
+        flex-basis: 48%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 100%;
+        min-width: 200pt;
+    }
+    /* WHAT end */
+
+    /* WHEN start */
+    div#when-section {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start; /* prevent image stretch */
+    }
+
+    div#when-section > * {
+        margin: 1%;
+    }
+    img#when-img {
+        flex-basis: 48%;
+        flex-grow: 1;
+        /*flex-shrink: 0;*/
+        width: 100%;
+        height: auto;
+    }
+    div#when-text {
+        flex-basis: 48%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 100%;
+        min-width: 200pt;
+    }
+    /* WHEN end */
+
+    /* WHY start */
+    div#why-section {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start; /* prevent image stretch */
+    }
+
+    div#why-section > * {
+        margin: 1%;
+    }
+    img#why-img {
+        flex-basis: 48%;
+        flex-grow: 1;
+        /*flex-shrink: 0;*/
+        width: 100%;
+        height: auto;
+    }
+    div#why-text {
+        flex-basis: 48%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 100%;
+        min-width: 200pt;
+    }
+    /* WHY end */
+
+</style>
+<body>
+
+<h1 class="read">Ski with Schreck!</h1>
+
+<img id="realm-of-schreckski" src="graphics/realm_of_schreckski_final.png" alt="Realm of Schreckski"/>
+
+<h2 class="read">Who</h2>
+
+<div id="who-section" class="read">
+    <img id="who-img" src="graphics/who.jpg" alt="Photo of Schreck"/>
+
+    <div id="who-text">
+        <p>Contact Mike Schreck, a PSIA-certified Nordic Level 2 Instructor if you want to ski faster and more efficiently on your Skate or Classic skis!</p>
+
+        <p>9 seasons teaching 4- to 80-year-old skiers how to love the XC Skiing life. All lessons customized to your ability.</p>
+    </div>
+</div>
+
+<h2 class="read">What</h2>
+
+<div id="what-section" class="read">
+    <div id="what-text">
+        <p>Private or Couples lessons.</p>
+        <p>Single or Multiple Week lessons.</p>
+        <p>On snow, rollerskis or by bike!</p>
+        <p>Flexible with your schedule, your ability and your passion!</p>
+    </div>
+
+    <img id="what-img" src="graphics/happy-skiers.jpg" alt="happy skiers"/>
+
+</div>
+
+<h2 class="read">Where</h2>
+
+<ul class="read">
+    <li>M,W,Fr: Cabin Creek Sno Park- <i>Best grooming on I-90!</i></li>
+    <li>Tu: Crystal Springs, Hyak or Salmon la Sac or Lake Easton SP- <i>Fast and flat for beginners!</i></li>
+    <li>Sa,Su: Suncadia Nordic Center- <i>Beautiful!</i></li>
+</ul>
+
+<img id="roller-pano" src="graphics/roller-pano.jpg" alt="rollerski panorama"/>
+
+<h2 class="read">When</h2>
+
+<div id="when-section" class="read">
+    <img id="when-img" src="graphics/bike.jpg" alt="Schreck on a bicycle"/>
+
+    <div id="when-text">
+        <p>M-F: 8, 9, 10, 11</p>
+        <p>S-S: 9, 10, 11, 12</p>
+        <p><i>Afternoons are for biking!</i></p>
+    </div>
+
+</div>
+
+<h2 class="read">How</h2>
+
+<div class="read">
+    <p>On your skis or rent from REI on West Side, Suncadia Nordic Center or Cle Elum Base Camp Outfitters on East Side.</p>
+    <p>Just email or text me your preferred time and ski lesson location.</p>
+</div>
+
+<h2 class="read">Contact info</h2>
+
+<div class="read">
+    <p><a href="mailto:schreckski@gmail.com">schreckski@gmail.com</a></p>
+    <p>Cell: 425-802-6699</p>
+</div>
+
+<h2 class="read">Why</h2>
+
+<div id="why-section" class="read">
+    <div id="why-text">
+        <p>Cross Country Skiing, Skate or Classic are the best ways to enjoy Winter Outdoors!</p>
+    </div>
+
+    <img id="why-img" src="graphics/why.jpg" alt="smiling skiers"/>
+
+</div>
+
+<h2 class="read">Follow me</h2>
+
+<ul class="read">
+    <li><a href="https://www.youtube.com/channel/UC79YNwOyf5E13PrZ3iBzLdg">YouTube channel</a></li>
+    <li><a href="https://www.instagram.com/mike.f.schreck/">Instagram</a></li>
+    <li><a href="https://www.facebook.com/schreckski?">Facebook</a></li>
+    <li><a href="https://www.strava.com/athletes/91434902">Strava</a></li>
+</ul>
+
+<h2 class="read">Can you wax or structure my skis?</h2>
+
+<div id="skis-section" class="read">
+    <img id="skis-img" src="graphics/skis.jpg" alt="pair of skis"/>
+
+    <div id="skis-text">
+        <p>Yes! Certified Ski Tech.</p>
+        <p>Just leave them with me at end of your lesson and I'll bring them to your next lesson.</p>
+        <p>Hand Pro Wax with best Swix CH waxes waxed for the upcoming weekend conditions for the same price as REI, but better customized Swix waxes.
+            And no more driving twice to drop off and pickup!</p>
+
+        <p>A waxed ski is a <i>FASTER SKI!</i></p>
+    </div>
+</div>
+
+<h2 class="read">How much for a lesson with Schreck?</h2>
+
+<div class="read">
+    <p>Sat/Sun at Suncadia: $100 per lesson (online reservations only)</p>
+    <p>All Sno Park XC groomed:</p>
+    <ul>
+        <li>one skier per lesson: first lesson $75, second lesson $50, third lesson $50, fourth lesson free!</li>
+        <li>two skiers: first lesson $125, second lesson $75, third lesson $75, fourth lesson free!</li>
+    </ul>
+</div>
+
+<img id="closing" src="graphics/closing.jpg" alt="scenic xc skiing closing photo"/>
+
+</body>
+</html>
