@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Home page of Schreck, a PSIA Level 2 Cross Country Ski Instructor. Let's bike if we can't ski!"/>
     <title>schreckski.com</title>
 </head>
 
@@ -26,7 +27,12 @@
     }
 
     h1 {
+        /* present for page structure, but we don't want to see it */
         display: none;
+    }
+
+    h2 {
+        margin-bottom: 0;
     }
 
     img#realm-of-schreckski, img#closing {
@@ -45,6 +51,47 @@
         mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5% 95%, rgba(0, 0, 0, 0));
     }
 
+    /* Grid gallery start */
+    /* https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ */
+    #grid-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, max-content);
+        grid-gap: 15px;
+    }
+
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery__item--hor-1 {
+        grid-column: 2 / 5;
+        grid-row: 1;
+    }
+    .gallery__item--hor-2 {
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
+    .gallery__item--center {
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+    }
+    .gallery__item--vert-1 {
+        grid-column: 1;
+        grid-row: 1 / 4;
+    }
+    .gallery__item--vert-2 {
+        grid-column: 4;
+        grid-row: 2 / 5;
+    }
+
+    div#grid-gallery figure {
+        margin: 5px;
+    }
+    /* Grid gallery end */
+
     /* WHO start */
     div#who-section {
         display: flex;
@@ -58,7 +105,6 @@
     img#who-img {
         flex-basis: 48%;
         flex-grow: 1;
-        /*flex-shrink: 0;*/
         width: 100%;
         height: auto;
     }
@@ -84,7 +130,6 @@
     img#skis-img {
         flex-basis: 48%;
         flex-grow: 1;
-        /*flex-shrink: 0;*/
         width: 100%;
         height: auto;
     }
@@ -110,7 +155,6 @@
     img#what-img {
         flex-basis: 48%;
         flex-grow: 1;
-        /*flex-shrink: 0;*/
         width: 100%;
         height: auto;
     }
@@ -136,7 +180,6 @@
     img#when-img {
         flex-basis: 48%;
         flex-grow: 1;
-        /*flex-shrink: 0;*/
         width: 100%;
         height: auto;
     }
@@ -162,7 +205,6 @@
     img#why-img {
         flex-basis: 48%;
         flex-grow: 1;
-        /*flex-shrink: 0;*/
         width: 100%;
         height: auto;
     }
@@ -185,18 +227,21 @@
 <h2 class="read">Who</h2>
 
 <div id="who-section" class="read">
-    <img id="who-img" src="graphics/who.jpg" alt="Photo of Schreck"/>
-
     <div id="who-text">
         <p>Contact Mike Schreck, a PSIA-certified Nordic Level 2 Instructor if you want to ski faster and more efficiently on your Skate or Classic skis!</p>
 
         <p>9 seasons teaching 4- to 80-year-old skiers how to love the XC Skiing life. All lessons customized to your ability.</p>
     </div>
+
+    <img id="who-img" src="graphics/who.jpg" alt="Photo of Schreck"/>
+
 </div>
 
 <h2 class="read">What</h2>
 
 <div id="what-section" class="read">
+    <img id="what-img" src="graphics/happy-skiers.jpg" alt="happy skiers"/>
+
     <div id="what-text">
         <p>Private or Couples lessons.</p>
         <p>Single or Multiple Week lessons.</p>
@@ -204,8 +249,24 @@
         <p>Flexible with your schedule, your ability and your passion!</p>
     </div>
 
-    <img id="what-img" src="graphics/happy-skiers.jpg" alt="happy skiers"/>
+</div>
 
+<div id="grid-gallery">
+    <figure class="gallery__item gallery__item--hor-1">
+        <img src="graphics/grid/hor1.jpg" class="gallery__img"/>
+    </figure>
+    <figure class="gallery__item gallery__item--hor-2">
+        <img src="graphics/grid/hor2.jpg" class="gallery__img"/>
+    </figure>
+    <figure class="gallery__item gallery__item--center">
+        <img src="graphics/grid/center.jpg" class="gallery__img"/>
+    </figure>
+    <figure class="gallery__item gallery__item--vert-1">
+        <img src="graphics/grid/vert1.jpg" class="gallery__img"/>
+    </figure>
+    <figure class="gallery__item gallery__item--vert-2">
+        <img src="graphics/grid/vert2.jpg" class="gallery__img"/>
+    </figure>
 </div>
 
 <h2 class="read">Where</h2>
@@ -216,18 +277,18 @@
     <li>Sa,Su: Suncadia Nordic Center- <i>Beautiful!</i></li>
 </ul>
 
-<img id="roller-pano" src="graphics/roller-pano.jpg" alt="rollerski panorama"/>
+<!--<img id="roller-pano" src="graphics/roller-pano.jpg" alt="rollerski panorama"/>-->
 
 <h2 class="read">When</h2>
 
 <div id="when-section" class="read">
-    <img id="when-img" src="graphics/bike.jpg" alt="Schreck on a bicycle"/>
-
     <div id="when-text">
         <p>M-F: 8, 9, 10, 11</p>
         <p>S-S: 9, 10, 11, 12</p>
         <p><i>Afternoons are for biking!</i></p>
     </div>
+
+    <img id="when-img" src="graphics/bike.jpg" alt="Schreck on a bicycle"/>
 
 </div>
 
@@ -248,11 +309,11 @@
 <h2 class="read">Why</h2>
 
 <div id="why-section" class="read">
+    <img id="why-img" src="graphics/why.jpg" alt="smiling skiers"/>
+
     <div id="why-text">
         <p>Cross Country Skiing, Skate or Classic are the best ways to enjoy Winter Outdoors!</p>
     </div>
-
-    <img id="why-img" src="graphics/why.jpg" alt="smiling skiers"/>
 
 </div>
 
@@ -261,15 +322,13 @@
 <ul class="read">
     <li><a href="https://www.youtube.com/channel/UC79YNwOyf5E13PrZ3iBzLdg">YouTube channel</a></li>
     <li><a href="https://www.instagram.com/mike.f.schreck/">Instagram</a></li>
-    <li><a href="https://www.facebook.com/schreckski?">Facebook</a></li>
+    <li><a href="https://www.facebook.com/schreckski">Facebook</a></li>
     <li><a href="https://www.strava.com/athletes/91434902">Strava</a></li>
 </ul>
 
 <h2 class="read">Can you wax or structure my skis?</h2>
 
 <div id="skis-section" class="read">
-    <img id="skis-img" src="graphics/skis.jpg" alt="pair of skis"/>
-
     <div id="skis-text">
         <p>Yes! Certified Ski Tech.</p>
         <p>Just leave them with me at end of your lesson and I'll bring them to your next lesson.</p>
@@ -278,6 +337,9 @@
 
         <p>A waxed ski is a <i>FASTER SKI!</i></p>
     </div>
+
+    <img id="skis-img" src="graphics/skis.jpg" alt="pair of skis"/>
+
 </div>
 
 <h2 class="read">How much for a lesson with Schreck?</h2>
