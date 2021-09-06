@@ -48,13 +48,24 @@
     }
 
     img#realm-of-schreckski {
-        background-image: linear-gradient(
-                rgba(196, 211, 0, 1), /* shrek green */
-                rgba(255, 255, 255, 0));
-        background-size: auto 70%;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        animation-name: realm-background;
+
+        background-image: linear-gradient(30deg, #3060ff, white);
+        background-color: #c4d300ff; /* shrek green */
         background-repeat: no-repeat;
         background-position: top;
+    }
 
+    @keyframes realm-background {
+        from {
+            background-color: white;
+        }
+
+        to {
+            background-color: #c4d300ff; /* shrek green */
+        }
     }
 
     img#realm-of-schreckski, img#closing {
