@@ -9,11 +9,6 @@
 
 <style>
     body {
-        background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 255, 255, 0));
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-
         /* to remove whitespace around closing image */
         padding: 0;
         margin: 0;
@@ -32,7 +27,34 @@
     }
 
     h2 {
+        margin-top: 40px;
         margin-bottom: 0;
+
+        border-top: 20px solid #0080ff;
+        border-right: 20px solid #f6f6f6;
+    }
+
+    div#toc-section {
+        width: 100%;
+        text-align: center;
+    }
+    ol#toc li {
+        display: inline-block;
+        margin-right: 2em;
+        margin-bottom: 1em;
+    }
+    ol#toc li:before {
+        content: "⛷ ";
+    }
+
+    img#realm-of-schreckski {
+        background-image: linear-gradient(
+                rgba(196, 211, 0, 1), /* shrek green */
+                rgba(255, 255, 255, 0));
+        background-size: auto 70%;
+        background-repeat: no-repeat;
+        background-position: top;
+
     }
 
     img#realm-of-schreckski, img#closing {
@@ -44,11 +66,6 @@
 
     img#closing {
         mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    }
-
-    img#roller-pano {
-        width: 100%;
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5% 95%, rgba(0, 0, 0, 0));
     }
 
     /* Grid gallery start */
@@ -224,7 +241,22 @@
 
 <img id="realm-of-schreckski" src="graphics/realm_of_schreckski_final.png" alt="Realm of Schreckski"/>
 
-<h2 class="read">Who</h2>
+<div id="toc-section">
+    <ol id="toc">
+        <li><a href="#who">who</a></li>
+        <li><a href="#what">what</a></li>
+        <li><a href="#where">where</a></li>
+        <li><a href="#when">when</a></li>
+        <li><a href="#how">how</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#why">why</a></li>
+        <li><a href="#follow-me">follow me</a></li>
+        <li><a href="#skis">waxing skis</a></li>
+        <li><a href="#pricing">pricing</a></li>
+    </ol>
+</div>
+
+<h2 class="read"><a id="who">Who</a></h2>
 
 <div id="who-section" class="read">
     <div id="who-text">
@@ -237,7 +269,7 @@
 
 </div>
 
-<h2 class="read">What</h2>
+<h2 class="read"><a id="what">What</a></h2>
 
 <div id="what-section" class="read">
     <img id="what-img" src="graphics/happy-skiers.jpg" alt="happy skiers"/>
@@ -269,7 +301,7 @@
     </figure>
 </div>
 
-<h2 class="read">Where</h2>
+<h2 class="read"><a id="where">Where</a></h2>
 
 <ul class="read">
     <li>M,W,Fr: Cabin Creek Sno Park- <i>Best grooming on I-90!</i></li>
@@ -277,9 +309,7 @@
     <li>Sa,Su: Suncadia Nordic Center- <i>Beautiful!</i></li>
 </ul>
 
-<!--<img id="roller-pano" src="graphics/roller-pano.jpg" alt="rollerski panorama"/>-->
-
-<h2 class="read">When</h2>
+<h2 class="read"><a id="when">When</a></h2>
 
 <div id="when-section" class="read">
     <div id="when-text">
@@ -292,21 +322,23 @@
 
 </div>
 
-<h2 class="read">How</h2>
+<h2 class="read"><a id="how">How</a></h2>
 
 <div class="read">
-    <p>On your skis or rent from REI on West Side, Suncadia Nordic Center or Cle Elum Base Camp Outfitters on East Side.</p>
+    <p>On your skis or rent from <a href="https://www.rei.com/">REI</a> on West Side,
+        <a href="https://www.destinationhotels.com/suncadia-resort/activities/winter-recreation">Suncadia Nordic Center</a>,
+        or <a href="https://www.basecamp-outfitters.com/">Cle Elum Base Camp Outfitters</a> on East Side.</p>
     <p>Just email or text me your preferred time and ski lesson location.</p>
 </div>
 
-<h2 class="read">Contact info</h2>
+<h2 class="read"><a id="contact">Contact info</a></h2>
 
 <div class="read">
     <p><a href="mailto:schreckski@gmail.com">schreckski@gmail.com</a></p>
     <p>Cell: 425-802-6699</p>
 </div>
 
-<h2 class="read">Why</h2>
+<h2 class="read"><a id="why">Why</a></h2>
 
 <div id="why-section" class="read">
     <img id="why-img" src="graphics/why.jpg" alt="smiling skiers"/>
@@ -317,7 +349,7 @@
 
 </div>
 
-<h2 class="read">Follow me</h2>
+<h2 class="read"><a id="follow-me">Follow me</a></h2>
 
 <ul class="read">
     <li><a href="https://www.youtube.com/channel/UC79YNwOyf5E13PrZ3iBzLdg">YouTube channel</a></li>
@@ -326,7 +358,7 @@
     <li><a href="https://www.strava.com/athletes/91434902">Strava</a></li>
 </ul>
 
-<h2 class="read">Can you wax or structure my skis?</h2>
+<h2 class="read"><a id="skis">Can you wax or structure my skis?</a></h2>
 
 <div id="skis-section" class="read">
     <div id="skis-text">
@@ -342,7 +374,7 @@
 
 </div>
 
-<h2 class="read">How much for a lesson with Schreck?</h2>
+<h2 class="read"><a id="pricing">How much for a lesson with Schreck?</a></h2>
 
 <div class="read">
     <p>Sat/Sun at Suncadia: $100 per lesson (online reservations only)</p>
