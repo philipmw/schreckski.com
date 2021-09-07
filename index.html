@@ -5,250 +5,251 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Home page of Schreck, a PSIA Level 2 Cross Country Ski Instructor. Let's bike if we can't ski!"/>
     <title>schreckski.com</title>
+
+    <style>
+        body {
+            /* to remove whitespace around closing image */
+            padding: 0;
+            margin: 0;
+
+            font-size: 20pt;
+        }
+
+        .read {
+            margin-left: 20pt;
+            margin-right: 20pt;
+        }
+
+        h1 {
+            /* present for page structure, but we don't want to see it */
+            display: none;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 0;
+
+            border-top: 20px solid #0080ff;
+            border-right: 20px solid #f6f6f6;
+        }
+
+        div#toc-section {
+            width: 100%;
+            text-align: center;
+        }
+        ol#toc li {
+            display: inline-block;
+            margin-right: 2em;
+            margin-bottom: 1em;
+        }
+        ol#toc li:before {
+            content: "⛷ ";
+        }
+
+        img#realm-of-schreckski {
+            animation-duration: 10s;
+            animation-timing-function: ease-in;
+            animation-name: realm-background;
+
+            background-image: linear-gradient(
+                    30deg,
+                    #3060ff, /* blue, no transparency */
+                    rgba(255, 255, 255, 0)); /* white, full transparency to support background-color */
+            background-color: #c4d300; /* shrek green */
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        @keyframes realm-background {
+            from {
+                background-color: white;
+            }
+
+            to {
+                background-color: #c4d300; /* shrek green */
+            }
+        }
+
+        img#realm-of-schreckski, img#closing {
+            display: block;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        img#closing {
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        }
+
+        /* Grid gallery start */
+        /* https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ */
+        #grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, max-content);
+            grid-gap: 15px;
+        }
+
+        .gallery__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery__item--hor-1 {
+            grid-column: 2 / 5;
+            grid-row: 1;
+        }
+        .gallery__item--hor-2 {
+            grid-column: 1 / 4;
+            grid-row: 4;
+        }
+        .gallery__item--center {
+            grid-column: 2 / 4;
+            grid-row: 2 / 4;
+        }
+        .gallery__item--vert-1 {
+            grid-column: 1;
+            grid-row: 1 / 4;
+        }
+        .gallery__item--vert-2 {
+            grid-column: 4;
+            grid-row: 2 / 5;
+        }
+
+        div#grid-gallery figure {
+            margin: 5px;
+        }
+        /* Grid gallery end */
+
+        /* WHO start */
+        div#who-section {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start; /* prevent image stretch */
+        }
+
+        div#who-section > * {
+            margin: 1%;
+        }
+        img#who-img {
+            flex-basis: 48%;
+            flex-grow: 1;
+            width: 100%;
+            height: auto;
+        }
+        div#who-text {
+            flex-basis: 48%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 100%;
+            min-width: 200pt;
+        }
+        /* WHO end */
+
+        /* SKIS start */
+        div#skis-section {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start; /* prevent image stretch */
+        }
+
+        div#skis-section > * {
+            margin: 1%;
+        }
+        img#skis-img {
+            flex-basis: 48%;
+            flex-grow: 1;
+            width: 100%;
+            height: auto;
+        }
+        div#skis-text {
+            flex-basis: 48%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 100%;
+            min-width: 200pt;
+        }
+        /* SKIS end */
+
+        /* WHAT start */
+        div#what-section {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start; /* prevent image stretch */
+        }
+
+        div#what-section > * {
+            margin: 1%;
+        }
+        img#what-img {
+            flex-basis: 48%;
+            flex-grow: 1;
+            width: 100%;
+            height: auto;
+        }
+        div#what-text {
+            flex-basis: 48%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 100%;
+            min-width: 200pt;
+        }
+        /* WHAT end */
+
+        /* WHEN start */
+        div#when-section {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start; /* prevent image stretch */
+        }
+
+        div#when-section > * {
+            margin: 1%;
+        }
+        img#when-img {
+            flex-basis: 48%;
+            flex-grow: 1;
+            width: 100%;
+            height: auto;
+        }
+        div#when-text {
+            flex-basis: 48%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 100%;
+            min-width: 200pt;
+        }
+        /* WHEN end */
+
+        /* WHY start */
+        div#why-section {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start; /* prevent image stretch */
+        }
+
+        div#why-section > * {
+            margin: 1%;
+        }
+        img#why-img {
+            flex-basis: 48%;
+            flex-grow: 1;
+            width: 100%;
+            height: auto;
+        }
+        div#why-text {
+            flex-basis: 48%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 100%;
+            min-width: 200pt;
+        }
+        /* WHY end */
+
+    </style>
 </head>
 
-<style>
-    body {
-        /* to remove whitespace around closing image */
-        padding: 0;
-        margin: 0;
-
-        font-size: 20pt;
-    }
-
-    .read {
-        margin-left: 20pt;
-        margin-right: 20pt;
-    }
-
-    h1 {
-        /* present for page structure, but we don't want to see it */
-        display: none;
-    }
-
-    h2 {
-        margin-top: 40px;
-        margin-bottom: 0;
-
-        border-top: 20px solid #0080ff;
-        border-right: 20px solid #f6f6f6;
-    }
-
-    div#toc-section {
-        width: 100%;
-        text-align: center;
-    }
-    ol#toc li {
-        display: inline-block;
-        margin-right: 2em;
-        margin-bottom: 1em;
-    }
-    ol#toc li:before {
-        content: "⛷ ";
-    }
-
-    img#realm-of-schreckski {
-        animation-duration: 10s;
-        animation-timing-function: ease-in;
-        animation-name: realm-background;
-
-        background-image: linear-gradient(
-                30deg,
-                #3060ff, /* blue, no transparency */
-                rgba(255, 255, 255, 0)); /* white, full transparency to support background-color */
-        background-color: #c4d300; /* shrek green */
-        background-repeat: no-repeat;
-        background-position: top;
-    }
-
-    @keyframes realm-background {
-        from {
-            background-color: white;
-        }
-
-        to {
-            background-color: #c4d300; /* shrek green */
-        }
-    }
-
-    img#realm-of-schreckski, img#closing {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-    img#closing {
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    }
-
-    /* Grid gallery start */
-    /* https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ */
-    #grid-gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, max-content);
-        grid-gap: 15px;
-    }
-
-    .gallery__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .gallery__item--hor-1 {
-        grid-column: 2 / 5;
-        grid-row: 1;
-    }
-    .gallery__item--hor-2 {
-        grid-column: 1 / 4;
-        grid-row: 4;
-    }
-    .gallery__item--center {
-        grid-column: 2 / 4;
-        grid-row: 2 / 4;
-    }
-    .gallery__item--vert-1 {
-        grid-column: 1;
-        grid-row: 1 / 4;
-    }
-    .gallery__item--vert-2 {
-        grid-column: 4;
-        grid-row: 2 / 5;
-    }
-
-    div#grid-gallery figure {
-        margin: 5px;
-    }
-    /* Grid gallery end */
-
-    /* WHO start */
-    div#who-section {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start; /* prevent image stretch */
-    }
-
-    div#who-section > * {
-        margin: 1%;
-    }
-    img#who-img {
-        flex-basis: 48%;
-        flex-grow: 1;
-        width: 100%;
-        height: auto;
-    }
-    div#who-text {
-        flex-basis: 48%;
-        flex-grow: 1;
-        flex-shrink: 0;
-        width: 100%;
-        min-width: 200pt;
-    }
-    /* WHO end */
-
-    /* SKIS start */
-    div#skis-section {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start; /* prevent image stretch */
-    }
-
-    div#skis-section > * {
-        margin: 1%;
-    }
-    img#skis-img {
-        flex-basis: 48%;
-        flex-grow: 1;
-        width: 100%;
-        height: auto;
-    }
-    div#skis-text {
-        flex-basis: 48%;
-        flex-grow: 1;
-        flex-shrink: 0;
-        width: 100%;
-        min-width: 200pt;
-    }
-    /* SKIS end */
-
-    /* WHAT start */
-    div#what-section {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start; /* prevent image stretch */
-    }
-
-    div#what-section > * {
-        margin: 1%;
-    }
-    img#what-img {
-        flex-basis: 48%;
-        flex-grow: 1;
-        width: 100%;
-        height: auto;
-    }
-    div#what-text {
-        flex-basis: 48%;
-        flex-grow: 1;
-        flex-shrink: 0;
-        width: 100%;
-        min-width: 200pt;
-    }
-    /* WHAT end */
-
-    /* WHEN start */
-    div#when-section {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start; /* prevent image stretch */
-    }
-
-    div#when-section > * {
-        margin: 1%;
-    }
-    img#when-img {
-        flex-basis: 48%;
-        flex-grow: 1;
-        width: 100%;
-        height: auto;
-    }
-    div#when-text {
-        flex-basis: 48%;
-        flex-grow: 1;
-        flex-shrink: 0;
-        width: 100%;
-        min-width: 200pt;
-    }
-    /* WHEN end */
-
-    /* WHY start */
-    div#why-section {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start; /* prevent image stretch */
-    }
-
-    div#why-section > * {
-        margin: 1%;
-    }
-    img#why-img {
-        flex-basis: 48%;
-        flex-grow: 1;
-        width: 100%;
-        height: auto;
-    }
-    div#why-text {
-        flex-basis: 48%;
-        flex-grow: 1;
-        flex-shrink: 0;
-        width: 100%;
-        min-width: 200pt;
-    }
-    /* WHY end */
-
-</style>
 <body>
 
 <h1 class="read">Ski with Schreck!</h1>
@@ -299,19 +300,19 @@
 
 <div id="grid-gallery">
     <figure class="gallery__item gallery__item--hor-1">
-        <img src="graphics/grid/hor1.jpg" class="gallery__img"/>
+        <img src="graphics/grid/hor1.jpg" class="gallery__img" alt="Schreck teaching a rollerski lesson"/>
     </figure>
     <figure class="gallery__item gallery__item--hor-2">
-        <img src="graphics/grid/hor2.jpg" class="gallery__img"/>
+        <img src="graphics/grid/hor2.jpg" class="gallery__img" alt="Schreck teaching a rollerski lesson"/>
     </figure>
     <figure class="gallery__item gallery__item--center">
-        <img src="graphics/grid/center.jpg" class="gallery__img"/>
+        <img src="graphics/grid/center.jpg" class="gallery__img" alt="Schreck skiing on a trail with sled dogs"/>
     </figure>
     <figure class="gallery__item gallery__item--vert-1">
-        <img src="graphics/grid/vert1.jpg" class="gallery__img"/>
+        <img src="graphics/grid/vert1.jpg" class="gallery__img" alt="Schreck skiing"/>
     </figure>
     <figure class="gallery__item gallery__item--vert-2">
-        <img src="graphics/grid/vert2.jpg" class="gallery__img"/>
+        <img src="graphics/grid/vert2.jpg" class="gallery__img" alt="Schreck skiing"/>
     </figure>
 </div>
 
