@@ -41,8 +41,8 @@
         h2 {
             font-size: 30pt;
 
-            margin-top: 40px;
-            margin-bottom: 0;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
 
             border-top: 20px solid #0080ff;
             border-right: 20px solid #f6f6f6;
@@ -84,53 +84,15 @@
 	padding: 0.5em;
 	}
 
-        /* Grid gallery start */
-        /* https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ */
-        #grid-gallery {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(4, max-content);
-            grid-gap: 15px;
+	img.centered {
+        width: 100%;
+	max-width: 1000px;
+        height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
         }
 
-        .gallery__img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .gallery__item--hor-1 {
-            grid-column: 2 / 5;
-            grid-row: 1;
-        }
-        .gallery__item--hor-2 {
-            grid-column: 1 / 4;
-            grid-row: 4;
-        }
-        .gallery__item--center {
-            grid-column: 2 / 4;
-            grid-row: 2 / 4;
-        }
-        .gallery__item--vert-1 {
-            grid-column: 1;
-            grid-row: 1 / 4;
-        }
-        .gallery__item--vert-2 {
-            grid-column: 4;
-            grid-row: 2 / 5;
-        }
-
-        div#grid-gallery figure {
-            margin: 5px;
-        }
-        /* Grid gallery end */
-
-	img#sign-up-img {
-            flex-basis: 48%;
-            flex-grow: 1;
-            width: 100%;
-            height: auto;
-        }
         /* WHO start */
         div#who-section {
             display: flex;
@@ -140,12 +102,6 @@
 
         div#who-section > * {
             margin: 1%;
-        }
-        img#who-img {
-            flex-basis: 48%;
-            flex-grow: 1;
-            width: 100%;
-            height: auto;
         }
         div#who-text {
             flex-basis: 48%;
@@ -166,12 +122,6 @@
         div#skis-section > * {
             margin: 1%;
         }
-        img#skis-img {
-            flex-basis: 48%;
-            flex-grow: 1;
-            width: 100%;
-            height: auto;
-        }
         div#skis-text {
             flex-basis: 48%;
             flex-grow: 1;
@@ -190,12 +140,6 @@
 
         div#what-section > * {
             margin: 1%;
-        }
-        img#what-img {
-            flex-basis: 48%;
-            flex-grow: 1;
-            width: 100%;
-            height: auto;
         }
         div#what-text {
             flex-basis: 48%;
@@ -217,18 +161,6 @@
             margin: 1%;
         }
 
-	img#ski-rentals-img {
-            flex-basis: 48%;
-            flex-grow: 1;
-            width: 100%;
-            height: auto;
-        }
-        img#when-img {
-            flex-basis: 48%;
-            flex-grow: 1;
-            width: 100%;
-            height: auto;
-        }
         div#when-text {
             flex-basis: 48%;
             flex-grow: 1;
@@ -248,12 +180,6 @@
         div#why-section > * {
             margin: 1%;
         }
-        img#why-img {
-            flex-basis: 48%;
-            flex-grow: 1;
-            width: 100%;
-            height: auto;
-        }
         div#why-text {
             flex-basis: 48%;
             flex-grow: 1;
@@ -262,7 +188,6 @@
             min-width: 200pt;
         }
         /* WHY end */
-
     </style>
 </head>
 
@@ -283,7 +208,7 @@
     <li>Your preferred dates. Slots fill quickly, so try to email early in the season.</li>
   </ol>
 
-  <img id="sign-up-img" src="graphics/smiling-group.jpg"/>
+  <img class="photo" src="graphics/smiling-group.jpg" alt="Smiling group of skiers"/>
 </div>
 
 <div id="toc-section">
@@ -378,7 +303,7 @@
     <p>*All State Parks and Sno-Parks require either a Day Pass ($25) or a Season Pass with a Special Groomed Sticker ($120) for every vehicle. Available online: <a href="https://epermits.parks.wa.gov/Store/SNO/SnoChoice.aspx">Sno-Park Permits</a></p>
     </div>
 
-    <img id="who-img" src="graphics/schreck-skiing-smaller.jpg" alt="Photo of Schreck"/>
+    <img class="photo" src="graphics/schreck-skiing-smaller.jpg" alt="Photo of Schreck"/>
 
 </div>
 
@@ -411,14 +336,14 @@
       <p>Afternoons are for bicycling!</p>
     </div>
 
-    <img id="when-img" src="graphics/cycling.jpg" alt="Schreck on a bicycle"/>
+    <img class="photo" src="graphics/cycling.jpg" alt="Schreck on a bicycle"/>
 </div>
 
 
 <h2 class="read"><a id="ski-rentals">Ski Rentals &amp; Waxing</a></h2>
 
 <div class="read">
-  <img id="ski-rentals-img" src="graphics/skis2.jpg" alt="Schreck's famous skis"/>
+  <img class="photo" src="graphics/skis2.jpg" alt="Schreck's famous skis"/>
 
   <p>Gear rental:</p>
   <ul>
@@ -502,7 +427,7 @@
 <h2 class="read"><a id="about">About the Instructor</a></h2>
 
 <div class="read">
-  <img id="why-img" src="graphics/why.jpg" alt="Schreck"/>
+  <img class="photo" src="graphics/why.jpg" alt="Schreck"/>
 
   <p>Schreck is a PSIA (Professional Ski Instructors of America) Certified Pro XC Level 2 Ski Instructor. He has spent the last 13 seasons instructing aspiring skiers of all levels how to ski faster and more efficiently on classic and skate skis. His students range in age from 6 to 86. He’s been born and raised in Washington and has been XC skiing here his whole life. Find more of his skiing (and cycling!) content here:</p>
 
@@ -554,7 +479,7 @@
 
 <div id="what-to-expect-section" class="read">
 
-  <img id="why-img" src="graphics/classic-ski.jpg" alt="classic skiing"/>
+  <img class="photo" src="graphics/classic-ski.jpg" alt="classic skiing"/>
   <div id="why-text">
     <p class="read">Take a private lesson or learn with one or two friends or family members. That means class sizes of 1-3 skiers&mdash;no large group lessons with strangers!</p>
 
