@@ -73,121 +73,40 @@
             mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
         }
 
-	table th {
-	border: 1px solid black;
-	font-weight: bold;
-	padding: 0.5em;
-	}
-
-	table td {
-	border: 1px solid black;
-	padding: 0.5em;
-	}
-
-	img.photo {
-        width: 100%;
-	max-width: 1000px;
-        height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+        table tfoot td {
+          font-style: italic;
+        }
+        table th {
+            border: 1px solid black;
+            font-weight: bold;
+            padding: 0.5em;
         }
 
-        /* WHO start */
-        div#who-section {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start; /* prevent image stretch */
+        table td {
+            border: 1px solid black;
+            padding: 0.5em;
         }
 
-        div#who-section > * {
-            margin: 1%;
+        img.photo {
+              width: 100%;
+              max-width: 1000px;
+              height: auto;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
         }
-        div#who-text {
+
+        div#what-to-expect-text {
             flex-basis: 48%;
             flex-grow: 1;
             flex-shrink: 0;
             width: 100%;
             min-width: 200pt;
         }
-        /* WHO end */
 
-        /* SKIS start */
-        div#skis-section {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start; /* prevent image stretch */
+        table#schedule-table tr.day-off td {
+          background-color: silver;
         }
-
-        div#skis-section > * {
-            margin: 1%;
-        }
-        div#skis-text {
-            flex-basis: 48%;
-            flex-grow: 1;
-            flex-shrink: 0;
-            width: 100%;
-            min-width: 200pt;
-        }
-        /* SKIS end */
-
-        /* WHAT start */
-        div#what-section {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start; /* prevent image stretch */
-        }
-
-        div#what-section > * {
-            margin: 1%;
-        }
-        div#what-text {
-            flex-basis: 48%;
-            flex-grow: 1;
-            flex-shrink: 0;
-            width: 100%;
-            min-width: 200pt;
-        }
-        /* WHAT end */
-
-        /* WHEN start */
-        div#when-section {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start; /* prevent image stretch */
-        }
-
-        div#when-section > * {
-            margin: 1%;
-        }
-
-        div#when-text {
-            flex-basis: 48%;
-            flex-grow: 1;
-            flex-shrink: 0;
-            width: 100%;
-            min-width: 200pt;
-        }
-        /* WHEN end */
-
-        /* WHY start */
-        div#why-section {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start; /* prevent image stretch */
-        }
-
-        div#why-section > * {
-            margin: 1%;
-        }
-        div#why-text {
-            flex-basis: 48%;
-            flex-grow: 1;
-            flex-shrink: 0;
-            width: 100%;
-            min-width: 200pt;
-        }
-        /* WHY end */
     </style>
 </head>
 
@@ -203,9 +122,10 @@
   <ol>
     <li>Whether you want a classic (in the tracks) or skate lesson. New to XC? Start with a classic lesson.</li>
     <li>Whether you are a beginner or intermediate to advanced skier.</li>
-    <li>How many lessons you want (prepay for three, the fourth is free!)</li>
-    <li>If you want 75 minute or 2 hour lessons.</li>
-    <li>Your preferred dates. Slots fill quickly, so try to email early in the season.</li>
+    <li>If you're a beginning skier, try a 4-pack ($100 off) on classic skis. If you're an intermediate to advanced skier, try a 2-pack tune-up on your skate, classic, or one of both.</li>
+    <li>Location. If you're brand new to classic or skate skiing, Monday is best because Hyak Sno-Park is very flat and easier to ski. Also it's the closest grooming to Seattle and has indoor plumbing!</li>
+    <li>If you're an intermediate or advanced skate skier, your days of the week are Wednesdays and Sundays at Crystal Springs sno-park. Miles of varied terrain, green to black.</li>
+    <li>If you're an intermediate to advanced classic skier, Thursdays and Saturdays are the best grooming for you at Crystal Springs, with miles of set tracks on rolling easy terrain.</li>
   </ol>
 
   <img class="photo" src="graphics/smiling-group.jpg" alt="Smiling group of skiers"/>
@@ -226,76 +146,83 @@
 
 <div id="schedule-section" class="read">
   <table id="schedule-table">
+    <thead>
     <tr>
       <th>DAY</th>
-      <th>LEVEL and LOCATION</th>
+      <th>LEVEL, TECHNIQUE, LOCATION</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td rowspan="2">Mondays</td>
+      <td>Beginner Classic (or Skate, if good at Classic)</td>
+    </tr>
+    <tr>
+      <td>at <a href="https://maps.app.goo.gl/hHa9ngccJPXnZsAs5">Hyak sno-park</a></td>
+    </tr>
+
+    <tr class="day-off">
+      <td>Tuesdays</td>
+      <td>No grooming; let's bike!</td>
     </tr>
 
     <tr>
-      <td rowspan="2">Monday</td>
-      <td>Beginner Classic or Skate</td>
-    </tr>
-    <tr>
-      <td><a href="https://maps.app.goo.gl/hHa9ngccJPXnZsAs5">Hyak Sno-Park</a></td>
-    </tr>
-
-    <tr>
-      <td rowspan="2">Tuesday</td>
-      <td>Location & level depend on grooming conditions</td>
-    </tr>
-    <tr>
-      <td><a href="https://maps.app.goo.gl/ZDQLLj4xd9qaH5qg8">Lake Easton State Park</a> or <a href="https://maps.app.goo.gl/rETAxDurmZQnbBEK8">Suncadia</a></td>
-    </tr>
-
-    <tr>
-      <td rowspan="2">Wednesday</td>
+      <td rowspan="2">Wednesdays</td>
       <td>Intermediate / Advanced Skate</td>
     </tr>
     <tr>
-      <td><a href="https://maps.app.goo.gl/ydWZq65EtScUyLja7">Crystal Springs Sno-Park</a></td>
-
+      <td>at <a href="https://maps.app.goo.gl/ydWZq65EtScUyLja7">Crystal Springs sno-park</a></td>
     </tr>
 
     <tr>
-      <td rowspan="2">Thursday</td>
+      <td rowspan="2">Thursdays</td>
       <td>Intermediate / Advanced Classic</td>
     </tr>
     <tr>
-      <td><a href="https://maps.app.goo.gl/ydWZq65EtScUyLja7">Crystal Springs Sno-Park</a></td>
+      <td>at <a href="https://maps.app.goo.gl/ydWZq65EtScUyLja7">Crystal Springs sno-park</a></td>
+    </tr>
+
+    <tr class="day-off">
+      <td>Fridays</td>
+      <td>day off to bike!</td>
     </tr>
 
     <tr>
-      <td rowspan="2">Friday</td>
+      <td rowspan="2">Saturdays</td>
+      <td>Intermediate / Advanced Classic</td>
+    </tr>
+    <tr>
+      <td>at <a href="https://maps.app.goo.gl/ydWZq65EtScUyLja7">Crystal Springs sno-park</a></td>
+    </tr>
+
+    <tr>
+      <td rowspan="2">Sundays</td>
       <td>Intermediate / Advanced Skate</td>
     </tr>
     <tr>
-      <td><a href="https://maps.app.goo.gl/ydWZq65EtScUyLja7">Crystal Springs Sno-Park</a></td>
+      <td>at <a href="https://maps.app.goo.gl/ydWZq65EtScUyLja7">Crystal Springs sno-park</a></td>
     </tr>
-
-    <tr>
-      <td rowspan="2">Saturday</td>
-      <td>Location & level depend on grooming conditions</td>
-    </tr>
-    <tr>
-      <td><a href="https://maps.app.goo.gl/ZDQLLj4xd9qaH5qg8">Lake Easton State Park</a> or <a href="https://maps.app.goo.gl/rETAxDurmZQnbBEK8">Suncadia</a></td>
-    </tr>
-
-    <tr>
-      <td rowspan="2">Sunday</td>
-      <td>Intermediate / Advanced Skate</td>
-    </tr>
-    <tr>
-      <td><a href="https://maps.app.goo.gl/ydWZq65EtScUyLja7">Crystal Springs Sno-Park</a></td>
-    </tr>
+    </tbody>
   </table>
 
   <div id="schedule-text">
     <ul>
-      <li><b>Hyak State Park Sno-Park*</b>: The closest XC grooming to Seattle! The terrain is flatter and perfect for beginners and building technique. Over 10km of the Palouse to Cascades Trail running along scenic Keechelus Lake are groomed twice a day. Indoor plumbing at the parking lot.</li>
+      <li><b>Hyak State Park Sno-Park*</b>:
+        The closest XC grooming to Seattle!
+        The terrain is flatter and perfect for beginners and building technique.
+        Over 10km of the Palouse to Cascades Trail running along scenic Keechelus Lake are groomed twice a day.
+        Indoor plumbing at the parking lot.
+        Exit 56 off I-90, east lot.
+      </li>
 
-      <li><b>Crystal Springs Sno-Park*</b>: Driving a little farther east to Crystal Springs means easier parking and getting more solitude on the trails! It boasts over 30km of groomed trails with terrain suitable for intermediate to advanced skiers. We meet a 0.5mi ski up from <a href="https://maps.app.goo.gl/6ZFJxAdV38kXR4Bx8">parking lot #1</a> at the intersection of the Palouse to Cascades Trail and the Stampede Pass Trail (<a href="https://www.openstreetmap.org/#map=17/47.29981/-121.32833">center of this map</a>).</li>
-
-      <li><b>Lake Easton State Park*</b>: and the skiing trails at <b>Suncadia Resort</b>: These are possible options for Tuesday and Saturday lessons, depending on the grooming conditions. Email <a href="mailto:schreckski@gmail.com">SchreckSki@gmail.com</a> if you’re interested!</li>
+      <li><b>Crystal Springs Sno-Park*</b>:
+        Driving a little farther east to Crystal Springs means easier parking and getting more solitude on the trails!
+        It boasts over 30km of groomed trails with terrain suitable for intermediate to advanced skiers.
+        Exit 62 off I-90, lot #1.
+        We meet a 0.5mi ski up from <a href="https://maps.app.goo.gl/6ZFJxAdV38kXR4Bx8">parking lot #1</a> at
+        the intersection of the Palouse to Cascades Trail and the Stampede Pass Trail
+        (<a href="https://www.openstreetmap.org/#map=17/47.29981/-121.32833">center of this map</a>).</li>
 
       <li>Sorry, no lessons at Cabin Creek</li>
     </ul>
@@ -314,24 +241,34 @@
       <p>Please arrive at least 15 minutes early to suit up, warm up, and ski to the meet-up place.</p>
 
       <table>
-	<tr>
-	  <th>Daily Lesson Times</th>
-	  <th>Duration</th>
-	</tr>
+        <thead>
+        <tr>
+          <th>Daily Lesson Times</th>
+          <th>Duration</th>
+        </tr>
+        </thead>
 
-	<tr>
-	  <td>8 am to 9:15</td>
-	  <td>75-minute lesson</td>
-	</tr>
-	<tr>
-	  <td>9:30 to 10:45</td>
-	  <td>75-minute lesson</td>
-	</tr>
-	<tr>
-	  <td>11 am to 1 pm</td>
-	  <td>2-hour lesson</td>
-	</tr>
+        <tbody>
+        <tr>
+          <td>8:30 to 9:45</td>
+          <td>75-minute private lesson</td>
+        </tr>
+        <tr>
+          <td>10:00 to 11:15</td>
+          <td>75-minute private lesson</td>
+        </tr>
+        <tr>
+          <td>noon to 1:15</td>
+          <td>saved for rescheduled make-up lessons *</td>
+        </tr>
+        </tbody>
       </table>
+
+      <p>* <b>Cancellation policy:</b>
+        72-hour notice to reschedule. Exceptions for Pass closure and sickness. (Let me know ASAP.)
+        Make-up lessons will be scheduled for a later date. Subject to availability.
+        If none available, then refund or bank lesson for next season.
+      </p>
 
       <p>Afternoons are for bicycling!</p>
     </div>
@@ -364,62 +301,47 @@
 <h2 class="read"><a id="prices">Lesson Prices</a></h2>
 
 <div class="read">
-    <p>Prices for a ski lesson (or how to get 4 lessons for the price of 3!)</p>
+    <p>Buy 4-pack and save $100!</p>
+
     <p>Pre-pay with my Venmo account at: <a href="https://venmo.com/u/Mike-Schreck-12">@Mike-Schreck-12</a>.</p>
 
-
-    <table>
+    <table id="lesson-prices">
+      <thead>
       <tr>
-	<th>Private 75-minute lesson</th>
-	<th>Total Price</th>
-	<th>4-Pack</th>
+        <th>private 75-min lessons</th>
+        <th>Two-Pack</th>
+        <th>Four-Pack</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>one skier</td>
+        <td>$250</td>
+        <td>$400 ($500 minus $100)</td>
       </tr>
 
       <tr>
-	<td>One Skier</td>
-	<td>$110</td>
-	<td>$330</td>
+        <td>two skiers (similar ability and like each other!)</td>
+        <td>$375</td>
+        <td>$650 ($750 minus $100)</td>
       </tr>
 
       <tr>
-	<td>Two Skiers</td>
-	<td>$160</td>
-	<td>$480</td>
+        <td>three compatible skiers</td>
+        <td>$475</td>
+        <td>$850 ($950 minus $100)</td>
       </tr>
+      </tbody>
 
+      <tfoot>
       <tr>
-	<td colspan="2">(25% longer than one hour)</td>
-	<td>(5 hours!)</td>
+        <td>25% longer than one hour</td>
+        <td>1.5 hours total</td>
+        <td>5 hours total</td>
       </tr>
+      </tfoot>
 
-      <tr>
-	<th>Two-Hour Lesson</th>
-	<th>Total Price</th>
-	<th>4-Pack</th>
-      </tr>
-
-      <tr>
-	<td>One Skier</td>
-	<td>$160</td>
-	<td>$480</td>
-      </tr>
-
-      <tr>
-	<td>Two Skiers</td>
-	<td>$210</td>
-	<td>$630</td>
-      </tr>
-
-      <tr>
-	<td>Three Skiers</td>
-	<td>$250</td>
-	<td>$750</td>
-      </tr>
-
-      <tr>
-	<td colspan="2">(New this season!)</td>
-	<td>(8 hours!)</td>
-      </tr>
     </table>
 
 </div>
@@ -480,14 +402,20 @@
 <div id="what-to-expect-section" class="read">
 
   <img class="photo" src="graphics/classic-ski.jpg" alt="classic skiing"/>
-  <div id="why-text">
-    <p class="read">Take a private lesson or learn with one or two friends or family members. That means class sizes of 1-3 skiers&mdash;no large group lessons with strangers!</p>
+  <div id="what-to-expect-text">
+    <p class="read">
+      Take two or four private lessons on skate or classic skis to learn how to be more efficient on your skis and love winter in the PNW.
+    </p>
+    <p class="read">
+      All lessons are private, customized to your abilities, skills, and goals.
+      No cookie-cutter group lessons with strangers!
+      Just you and maybe your best friend.
+    </p>
 
     <ul class="read">
-      <li>Private or couples 75-minute lessons (25% longer than the typical 1-hour lesson so you can really improve!)</li>
-      <li>Two-hour lesson (New this season: 1-3 skiers of similar abilities and either skate or classic skis)</li>
-      <li>If you really want to improve, plan on four weekly lessons to jumpstart your technique, correct bad habits, and increase your skiing efficiency.</li>
-      <li>Bonus: If you pre-pay for three lessons, the fourth lesson is free. That’s four lessons for the price of three!</li>
+      <li>Private or duo/trio 75-minute lessons (25% longer than the typical 1-hour lesson so you can really improve!)</li>
+      <li>For beginning classic (new to Nordic) or new skate skiers, plan on four weekly lessons to learn the fundamentals to be more efficient on your skis on Mondays at Hyak sno-park.</li>
+      <li>If you're an intermediate to advanced skier or racer, try a two or four pack to improve your efficiency and race speed. V2, V2A, V0, V1 on varied terrain at Crystal Springs sno-park.</li>
     </ul>
   </div>
 
