@@ -1,0 +1,93 @@
+body {
+    /* to remove whitespace around closing image */
+    padding: 0;
+    margin: 0;
+
+    font-size: 20pt;
+}
+
+.read {
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+.calltoaction {
+    background-color: #f0f0ff;
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 30pt; /* same as h2 */
+}
+
+h2 {
+    font-size: 30pt;
+
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+
+    border-top: 20px solid #0080ff;
+    border-right: 20px solid #f6f6f6;
+}
+
+div#toc-section {
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+}
+ol#toc li {
+    display: inline-block;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+ol#toc li:before {
+    content: "⛷ ";
+}
+
+img#realm-of-schreckski, img#closing {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img#closing {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+table tfoot td {
+    font-style: italic;
+}
+table th {
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+img.photo {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#what-to-expect-text {
+    flex-basis: 48%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+    min-width: 200pt;
+}
+
+table#schedule-table tr.day-off td {
+    background-color: silver;
+}

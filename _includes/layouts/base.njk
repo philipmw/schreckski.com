@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="KX4BTuyaX0ULVLXQq9MgXkIOLd9_LB1axyYwyUiCv5w"/>
+    <meta name="msvalidate.01" content="AC777149B3749E080CA30F769109695F"/> <!-- Bing Webmaster Tools -->
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    <link rel="alternate" href="/feed.atom" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="icon" type="image/png" sizes="360x360" href="/graphics/favicon-360x360.png">
+    <meta name="og:image" content="{{ metadata.url }}/graphics/og-image.png"/>
+    <meta name="generator" content="{{ eleventy.generator }}">
+
+    {#-
+    Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
+    1. CSS:
+    * Add to a per-page bundle using `{% css %}{% endcss %}`
+    * Retrieve bundle content using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+    2. Or for JavaScript:
+    * Add to a per-page bundle using `{% js %}{% endjs %}`
+    * Retrieve via `{% getBundle "js" %}` or `{% getBundleFileUrl "js" %}`
+    3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
+    #}
+
+    {#- Add the contents of a file to the bundle #}
+    <style>{% include "css/all.css" %}</style>
+    {#- Or you can add from node_modules #}
+    {# <style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style> #}
+
+    {#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
+    <style>{% getBundle "css" %}</style>
+    {#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
+    {#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
+  </head>
+  <body>
+
+    {{ content | safe }}
+
+    <img id="closing" src="/graphics/closing.jpg" alt="scenic xc skiing closing photo"/>
+
+  </body>
+</html>

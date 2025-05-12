@@ -1,0 +1,15 @@
+---js
+const eleventyNavigation = {
+	key: "Archive",
+	order: 2
+};
+---
+<div class="read">
+<a href="/"><img src="/graphics/favicon-360x360.png" alt="Schreck" style="width: 90px; height: 90px; margin-top: 1em;"/></a>
+<h1 style="display: inline">Archives from Schreck's waxing bench</h1>
+
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
+</div>
+
+

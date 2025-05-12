@@ -1,116 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="KX4BTuyaX0ULVLXQq9MgXkIOLd9_LB1axyYwyUiCv5w"/>
-    <meta name="msvalidate.01" content="AC777149B3749E080CA30F769109695F"/> <!-- Bing Webmaster Tools -->
-    <meta name="viewport" content="width=device-width"/>
-    <meta name="description"
-          content="Private nordic skiing lessons near Seattle & Snoqualmie Pass. Learn to cross country ski & skate in Washington's Cascades with a certified instructor!"/>
-    <meta name="og:title"
-          content="Cross Country Ski Lessons near Seattle | Snoqualmie Skiing"/>
-    <meta name="og:image" content="https://schreckski.com/graphics/og-image.png"/>
+---js
+const eleventyNavigation = {
+	key: "Home",
+	order: 1
+};
 
-    <title>Schreck's cross-country ski lessons at Snoqualmie Pass near Seattle</title>
-
-    <style>
-        body {
-            /* to remove whitespace around closing image */
-            padding: 0;
-            margin: 0;
-
-            font-size: 20pt;
-        }
-
-        .read {
-            margin-left: 20pt;
-            margin-right: 20pt;
-        }
-
-        .calltoaction {
-            background-color: #f0f0ff;
-            padding: 1em;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        h1 {
-            font-size: 30pt; /* same as h2 */
-        }
-
-        h2 {
-            font-size: 30pt;
-
-            margin-top: 1em;
-            margin-bottom: 0.5em;
-
-            border-top: 20px solid #0080ff;
-            border-right: 20px solid #f6f6f6;
-        }
-
-        div#toc-section {
-            margin-top: 2em;
-            width: 100%;
-            text-align: center;
-        }
-        ol#toc li {
-            display: inline-block;
-            margin-right: 2em;
-            margin-bottom: 1em;
-        }
-        ol#toc li:before {
-            content: "⛷ ";
-        }
-
-        img#realm-of-schreckski, img#closing {
-            display: block;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-
-        img#closing {
-            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-        }
-
-        table tfoot td {
-          font-style: italic;
-        }
-        table th {
-            border: 1px solid black;
-            font-weight: bold;
-            padding: 0.5em;
-        }
-
-        table td {
-            border: 1px solid black;
-            padding: 0.5em;
-        }
-
-        img.photo {
-              width: 100%;
-              max-width: 1000px;
-              height: auto;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-        }
-
-        div#what-to-expect-text {
-            flex-basis: 48%;
-            flex-grow: 1;
-            flex-shrink: 0;
-            width: 100%;
-            min-width: 200pt;
-        }
-
-        table#schedule-table tr.day-off td {
-          background-color: silver;
-        }
-    </style>
-</head>
-
-<body>
+const numberOfLatestPostsToShow = 3;
+---
 
 <img id="realm-of-schreckski" src="graphics/realm-watercolor.jpg" alt="Realm of Schreckski"/>
 
@@ -133,13 +28,34 @@
 
 <div id="toc-section">
     <ol id="toc">
-        <li><a href="#schedule">Weekly Schedule & Locations</a></li>
+        <li><a href="#newsletters">Newsletters</a></li>
+        <li><a href="#schedule">Weekly Schedule &amp; Locations</a></li>
         <li><a href="#lesson-times">Lesson Times and Calendar</a></li>
         <li><a href="#ski-rentals">Ski Rentals & Waxing</a></li>
         <li><a href="#prices">Lesson Prices</a></li>
         <li><a href="#about">About the Instructor</a></li>
         <li><a href="#what-to-expect">What to Expect</a></li>
     </ol>
+</div>
+
+<h2 class="read"><a id="newsletters">Newsletters</a></h2>
+
+<div id="newsletters" class="read">
+
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+
+<p>Latest {{ latestPostsCount }} post{% if latestPostsCount != 1 %}s{% endif %} from the waxing bench:</p>
+
+{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslistCounter = postsCount %}
+{% include "postslist.njk" %}
+
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/news">the archive</a>.</p>
+{% endif %}
+
 </div>
 
 <h2 class="read"><a id="schedule">Weekly Schedule &amp; Locations</a></h2>
@@ -427,8 +343,3 @@
 <div id="closing-section" class="read calltoaction">
     <p>Email <a href="mailto:schreckski@gmail.com">SchreckSki@gmail.com</a> with any questions and to sign up for a lesson!</p>
 </div>
-
-<img id="closing" src="graphics/closing.jpg" alt="scenic xc skiing closing photo"/>
-
-</body>
-</html>
