@@ -40,7 +40,7 @@ const numberOfLatestPostsToShow = 3;
 
 <h2 class="read"><a id="newsletters">Newsletters</a></h2>
 
-<div id="newsletters" class="read">
+<div id="newsletters-section" class="read">
 
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
