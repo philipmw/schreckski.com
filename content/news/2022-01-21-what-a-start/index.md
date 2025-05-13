@@ -1,6 +1,6 @@
 ---
 title: What a start to our XC Skiing season 👏
-date: 2022-01-21T22:39-0600
+date: 2022-01-21T22:39-0800
 ---
 Hi fellow XC skiers,
 

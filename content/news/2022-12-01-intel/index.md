@@ -1,6 +1,6 @@
 ---
 title: Intel on the first of December XC SKIING
-date: 2022-12-01T20:20-0600
+date: 2022-12-01T20:20-0800
 ---
 Hi Skiers, 
 

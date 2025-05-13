@@ -1,6 +1,6 @@
 ---
 title: How can I better balance on one ski when I skate?
-date: 2022-03-17T13:06-0600
+date: 2022-03-17T13:06-0800
 ---
 Hi skate Skiers,
 

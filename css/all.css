@@ -91,3 +91,11 @@ div#what-to-expect-text {
 table#schedule-table tr.day-off td {
     background-color: silver;
 }
+
+ol.postlist li {
+    padding: 0.3em;
+}
+
+p#newsreader-subscribe {
+    font-size: smaller;
+}

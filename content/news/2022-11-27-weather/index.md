@@ -1,6 +1,6 @@
 ---
 title: Set up your tuneup lessons at Schreckski.com cuz the Weather for Snoqualmie Pass, WA (Kittitas County) is kicking it!
-date: 2022-11-27T12:07-0600
+date: 2022-11-27T12:07-0800
 ---
 https://forecast.weather.gov/MapClick.php?lat=47.4187&lon=-121.412
 

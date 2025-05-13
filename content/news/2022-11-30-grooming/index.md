@@ -1,6 +1,6 @@
 ---
 title: Can you Believe it? 18 inches of new snow yesterday! The Grooming Schedule
-date: 2022-11-30T09:18-0600
+date: 2022-11-30T09:18-0800
 ---
 Hi Skiers, 
 

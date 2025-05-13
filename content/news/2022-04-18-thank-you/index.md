@@ -1,6 +1,6 @@
 ---
 title: Thank you for a great XC ski season!
-date: 2022-04-18T09:05-0600
+date: 2022-04-18T09:05-0800
 ---
 Hi XC skiers,
 

@@ -1,6 +1,6 @@
 ---
 title: Who wants to prepare for their best Cross Country ski Season?
-date: 2022-11-13T17:48-0600
+date: 2022-11-13T17:48-0800
 ---
 Hi Skiers, 
 

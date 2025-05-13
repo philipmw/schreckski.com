@@ -1,10 +1,10 @@
 ---
 title: How does one prepare for a great day XC skiing?
-date: 2022-12-07T08:35-0600
+date: 2022-12-07T08:35-0800
 ---
 Hi Skiers!
 
-Thank you Jennifer for asking this question about what to prepare before your first XC ski lessons with me and comingupto the Pass to XC ski for the first time.  I thought I'd share it with my students:
+Thank you Jennifer for asking this question about what to prepare before your first XC ski lessons with me and coming up to the Pass to XC ski for the first time.  I thought I'd share it with my students:
 
 
 Things to do before coming up:

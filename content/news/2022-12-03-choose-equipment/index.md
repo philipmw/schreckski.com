@@ -1,6 +1,6 @@
 ---
 title: How do I CHOOSE XC equipment in the Seattle Metro area?
-date: 2022-12-03T08:47-0600
+date: 2022-12-03T08:47-0800
 ---
 Hi XC skiers, 
 

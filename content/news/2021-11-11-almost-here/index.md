@@ -1,6 +1,6 @@
 ---
 title: XC Ski Season is almost here!
-date: 2021-11-11T13:25-0600
+date: 2021-11-11T13:25-0800
 ---
 Hi fellow Skiers and skier curious,
 
@@ -18,7 +18,7 @@ Let me know if I can help if you have questions on XC ski equipment to buy. Buyi
 
 The Newport Hills Ski Swap is the largest in Washington and is this weekend, Nov. 12-18 @ Newport High School.  While it's 90% Alpine gear, they have like 10,000 items in 17,000 sq. ft! (I volunteered back when I lived on Cougar Mountain nearby in the cross country section and they had a few winners so go early!) 
 
-I won't be there to help but at the Schreckski and bike barn, I have some high end Fischer racing skis/Pilot bindings & matching Salomon boots as I made the switch to Prolink bindings last Spring but I will miss my racing Salomon Pilot bindings! Call me if you're interested and about my size: 425 802 6699. 
+I won't be there to help but at the Schreckski and bike barn, I have some high end Fischer racing skis/Pilot bindings & matching Salomon boots as I made the switch to Prolink bindings last Spring but I will miss my racing Salomon Pilot bindings! Call me if you're interested and about my size: [...]. 
 
 If you or someone you know would like a refresher lesson or two, I would appreciate your referral!  I have a new website updated with a big thanks to Chris Chu and Philip White who generously brought me (kicking and skiing) into the 21st Century! 
 
