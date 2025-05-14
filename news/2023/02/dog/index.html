@@ -107,12 +107,71 @@ table#schedule-table tr.day-off td {
     background-color: silver;
 }
 
-ol.postlist li {
+ul li, ol li {
     padding: 0.3em;
+}
+
+ol.newslist li {
+    list-style-type: none;
 }
 
 p#newsreader-subscribe {
     font-size: smaller;
+}
+
+time.newsitem-date {
+    border-radius: 0.2em;
+    padding: 0.2em 0.4em;
+    font-size: 14pt;
+}
+
+time.newsitem-month-01 {
+    color: white;
+    background-color: #38509e;
+}
+time.newsitem-month-02 {
+    color: white;
+    background-color: #2939a8;
+}
+time.newsitem-month-03 {
+    color: white;
+    background-color: #3d63b3;
+}
+time.newsitem-month-04 {
+    color: black;
+    background-color: #40a36a;
+}
+time.newsitem-month-05 {
+    color: black;
+    background-color: #6da73c;
+}
+time.newsitem-month-06 {
+    color: black;
+    background-color: #83ce44;
+}
+time.newsitem-month-07 {
+    color: black;
+    background-color: #d4ce37;
+}
+time.newsitem-month-08 {
+    color: black;
+    background-color: #f3c638;
+}
+time.newsitem-month-09 {
+    color: black;
+    background-color: #be7624;
+}
+time.newsitem-month-10 {
+    color: white;
+    background-color: #7f4b10;
+}
+time.newsitem-month-11 {
+    color: white;
+    background-color: #5c5c5c;
+}
+time.newsitem-month-12 {
+    color: white;
+    background-color: #364d73;
 }
 div#newsletter-content img {
     width: 100%;
@@ -123,20 +182,25 @@ div#newsletter-content img {
     
 <div class="read">
 <a href="/"><img src="/graphics/favicon-360x360.png" alt="Schreck" style="width: 90px; height: 90px; margin-top: 1em;"></a>
-<h1 style="display: inline">News from Schreck's waxing bench</h1>
+<h1 style="display: inline">
+  <a style="text-decoration: none; color: black;" href="/news">News from Schreck's waxing bench</a>
+</h1>
 
-<h2>Want to take the dog cross-country skiing? Try this Nordic winter sport!</h2>
+<h2>
+  <time class="newsitem-date newsitem-month-02" style="vertical-align: middle" datetime="2023-02-07">
+    Feb 2023</time>
+  Want to take the dog cross-country skiing? Try this Nordic winter sport!
+</h2>
 
-<ul class="post-metadata">
-	<li><time datetime="2023-02-07">07 February 2023</time></li>
-</ul>
+
+
 </div>
 
 <div id="newsletter-content" class="read">
 <p>Hi skiers,</p>
 <p>If you don't have a suitable ski dog, then delete. But if you're skijoring curious, this is the best introduction to the great sport! I found it in this morning's Seattle Times newspaper. And if you have a free dog and the harness, I want to talk with you about borrowing your dog for an outing at Crystal Springs!</p>
 <p>The Nordic sport of skijoring brings four-legged friends into the fold for a day of cross-country skiing. Here's what you need to know to give the sport a try.</p>
-<p>https://www.seattletimes.com/life/outdoors/want-to-take-the-dog-cross-country-skiing-try-this-nordic-winter-sport/</p>
+<p><a href="https://www.seattletimes.com/life/outdoors/want-to-take-the-dog-cross-country-skiing-try-this-nordic-winter-sport/">https://www.seattletimes.com/life/outdoors/want-to-take-the-dog-cross-country-skiing-try-this-nordic-winter-sport/</a></p>
 <p>If I can't Ski, let's go Biking,</p>
 <p>Schreck</p>
 <p>&quot;Harsh landscapes are where I prefer to shed my skin and renew my faith in humanity, and the seat of a bicycle is where I have found my freedom.&quot;</p>

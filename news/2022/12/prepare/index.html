@@ -107,12 +107,71 @@ table#schedule-table tr.day-off td {
     background-color: silver;
 }
 
-ol.postlist li {
+ul li, ol li {
     padding: 0.3em;
+}
+
+ol.newslist li {
+    list-style-type: none;
 }
 
 p#newsreader-subscribe {
     font-size: smaller;
+}
+
+time.newsitem-date {
+    border-radius: 0.2em;
+    padding: 0.2em 0.4em;
+    font-size: 14pt;
+}
+
+time.newsitem-month-01 {
+    color: white;
+    background-color: #38509e;
+}
+time.newsitem-month-02 {
+    color: white;
+    background-color: #2939a8;
+}
+time.newsitem-month-03 {
+    color: white;
+    background-color: #3d63b3;
+}
+time.newsitem-month-04 {
+    color: black;
+    background-color: #40a36a;
+}
+time.newsitem-month-05 {
+    color: black;
+    background-color: #6da73c;
+}
+time.newsitem-month-06 {
+    color: black;
+    background-color: #83ce44;
+}
+time.newsitem-month-07 {
+    color: black;
+    background-color: #d4ce37;
+}
+time.newsitem-month-08 {
+    color: black;
+    background-color: #f3c638;
+}
+time.newsitem-month-09 {
+    color: black;
+    background-color: #be7624;
+}
+time.newsitem-month-10 {
+    color: white;
+    background-color: #7f4b10;
+}
+time.newsitem-month-11 {
+    color: white;
+    background-color: #5c5c5c;
+}
+time.newsitem-month-12 {
+    color: white;
+    background-color: #364d73;
 }
 div#newsletter-content img {
     width: 100%;
@@ -123,13 +182,18 @@ div#newsletter-content img {
     
 <div class="read">
 <a href="/"><img src="/graphics/favicon-360x360.png" alt="Schreck" style="width: 90px; height: 90px; margin-top: 1em;"></a>
-<h1 style="display: inline">News from Schreck's waxing bench</h1>
+<h1 style="display: inline">
+  <a style="text-decoration: none; color: black;" href="/news">News from Schreck's waxing bench</a>
+</h1>
 
-<h2>How does one prepare for a great day XC skiing?</h2>
+<h2>
+  <time class="newsitem-date newsitem-month-12" style="vertical-align: middle" datetime="2022-12-07">
+    Dec 2022</time>
+  How does one prepare for a great day XC skiing?
+</h2>
 
-<ul class="post-metadata">
-	<li><time datetime="2022-12-07">07 December 2022</time></li>
-</ul>
+
+
 </div>
 
 <div id="newsletter-content" class="read">

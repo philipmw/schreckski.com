@@ -107,12 +107,71 @@ table#schedule-table tr.day-off td {
     background-color: silver;
 }
 
-ol.postlist li {
+ul li, ol li {
     padding: 0.3em;
+}
+
+ol.newslist li {
+    list-style-type: none;
 }
 
 p#newsreader-subscribe {
     font-size: smaller;
+}
+
+time.newsitem-date {
+    border-radius: 0.2em;
+    padding: 0.2em 0.4em;
+    font-size: 14pt;
+}
+
+time.newsitem-month-01 {
+    color: white;
+    background-color: #38509e;
+}
+time.newsitem-month-02 {
+    color: white;
+    background-color: #2939a8;
+}
+time.newsitem-month-03 {
+    color: white;
+    background-color: #3d63b3;
+}
+time.newsitem-month-04 {
+    color: black;
+    background-color: #40a36a;
+}
+time.newsitem-month-05 {
+    color: black;
+    background-color: #6da73c;
+}
+time.newsitem-month-06 {
+    color: black;
+    background-color: #83ce44;
+}
+time.newsitem-month-07 {
+    color: black;
+    background-color: #d4ce37;
+}
+time.newsitem-month-08 {
+    color: black;
+    background-color: #f3c638;
+}
+time.newsitem-month-09 {
+    color: black;
+    background-color: #be7624;
+}
+time.newsitem-month-10 {
+    color: white;
+    background-color: #7f4b10;
+}
+time.newsitem-month-11 {
+    color: white;
+    background-color: #5c5c5c;
+}
+time.newsitem-month-12 {
+    color: white;
+    background-color: #364d73;
 }
 div#newsletter-content img {
     width: 100%;
@@ -123,13 +182,18 @@ div#newsletter-content img {
     
 <div class="read">
 <a href="/"><img src="/graphics/favicon-360x360.png" alt="Schreck" style="width: 90px; height: 90px; margin-top: 1em;"></a>
-<h1 style="display: inline">News from Schreck's waxing bench</h1>
+<h1 style="display: inline">
+  <a style="text-decoration: none; color: black;" href="/news">News from Schreck's waxing bench</a>
+</h1>
 
-<h2>March XC Ski Season and what to expect for the future in April</h2>
+<h2>
+  <time class="newsitem-date newsitem-month-03" style="vertical-align: middle" datetime="2025-03-23">
+    Mar 2025</time>
+  March XC Ski Season and what to expect for the future in April
+</h2>
 
-<ul class="post-metadata">
-	<li><time datetime="2025-03-23">23 March 2025</time></li>
-</ul>
+
+
 </div>
 
 <div id="newsletter-content" class="read">
@@ -149,7 +213,7 @@ Sunday 8am skate only
 <p>My website Schreckski.com
 has all the information if you forgot. $110 for 75 minutes.  Add a friend for just $50 more.</p>
 <p>To reserve, your Venmo payment can link below to my account.  In the notes, list skate or Classic, date and time. Please choose &quot;friends &quot;.</p>
-<p>https://venmo.com/code?user_id=3339712957775872804&amp;created=1742741311</p>
+<p><a href="https://venmo.com/code?user_id=3339712957775872804&amp;created=1742741311">https://venmo.com/code?user_id=3339712957775872804&amp;created=1742741311</a></p>
 <p>I hope to see you skiing or biking soon! I will be leading Roslyn Gravel Riders Saturday gravel bike rides starting in April.  Let me know if you're interested.  We start out doing shorter flatter rides in April to stay below the snow line and to adjust to the saddle. We have a &quot;no drop&quot; and &quot;stop for snacks&quot; policy. Usually wheels up at the Rise Roslyn Bike Shop at 9 am on Saturdays.  If you want to ride with me on any other day of the week, my cellphone number is 425 802 6699.</p>
 <p>So let's XC Ski until we bike!</p>
 <p>Schreck (Mike)
