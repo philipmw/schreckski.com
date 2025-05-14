@@ -6,7 +6,7 @@ Hi XC skiers,
 
  This article just posted in Cross Country Skier magazine December 22nd. It discusses taking XC Skate or Classic lessons and why finding a certified instructor may improve your experience. 
 
-https://www.crosscountryskier.com/why-go-with-an-instructor/
+<https://www.crosscountryskier.com/why-go-with-an-instructor/>
 
  I have taught XC skiing (once known as Nordic) full-time since 2013 and joined PSIA for the coaching on how to teach XC Skate and Classic technique effectively.  In 2014, I passed my PSIA Level 1 exams.  In 2016, I passed my Level 2 exams, a full two day on snow skiing test on teaching intermediate Classic and Skate students how to ski more efficiently and effortlessly!
 

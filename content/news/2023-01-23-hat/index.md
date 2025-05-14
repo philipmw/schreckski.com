@@ -8,7 +8,7 @@ Thus is just a suggestion and you may or may not agree with it.  As some of you 
 
 Philip White shared a product that is not going to replace your bike helmet but still give some protection on snow. It's much more protective than a regular ski hat!
 
-https://crasche.com/node/3
+<https://crasche.com/node/3>
 
 I ordered the winter version.  You'll see it on me going forward!
 

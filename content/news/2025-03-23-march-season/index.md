@@ -28,7 +28,7 @@ has all the information if you forgot. $110 for 75 minutes.  Add a friend for ju
 
 To reserve, your Venmo payment can link below to my account.  In the notes, list skate or Classic, date and time. Please choose "friends ".
 
-https://venmo.com/code?user_id=3339712957775872804&created=1742741311
+<https://venmo.com/code?user_id=3339712957775872804&created=1742741311>
 
 I hope to see you skiing or biking soon! I will be leading Roslyn Gravel Riders Saturday gravel bike rides starting in April.  Let me know if you're interested.  We start out doing shorter flatter rides in April to stay below the snow line and to adjust to the saddle. We have a "no drop" and "stop for snacks" policy. Usually wheels up at the Rise Roslyn Bike Shop at 9 am on Saturdays.  If you want to ride with me on any other day of the week, my cellphone number is 425 802 6699. 
 

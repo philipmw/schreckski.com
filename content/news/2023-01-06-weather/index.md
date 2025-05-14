@@ -21,7 +21,7 @@ Here's why from CCWRC.ORG:
 
 I find that 95% of the time, the conditions are different from the day before; 99% of the time you can ski virtually anything. I ski 7 days a week regardless of conditions.  I admit a thick sheet of ice from freezing rain at sub zero temperatures was a new challenge,  but if it was perfectly groomed every time, well then it's called bowling!
 
-Rain rarely ruins skiing, it just keeps the crowds away and can be snotty fast! So if you know someone who is interested in an XC Skiing lesson,  thanks for sharing my Website: https://schreckski.com
+Rain rarely ruins skiing, it just keeps the crowds away and can be snotty fast! So if you know someone who is interested in an XC Skiing lesson,  thanks for sharing my Website: <https://schreckski.com>
 
 let's ski if we can't bike!
 

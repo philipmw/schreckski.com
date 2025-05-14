@@ -32,7 +32,7 @@ Here's the dates to register. Remember, it sells out on the second date, sometim
 Ski Camp!
 Our oh so popular Ski camp opens registration on October 7th to members, and October 8 for everyone else. As you may know, this fills extremely quickly, so join or renew your membership today!
 
-https://methowvalleynordic.us3.list-manage.com/track/click?u=62bfe9ee0aac9031ce759a139&id=a1642d6007&e=e3c0df79a8 
+<https://methowvalleynordic.us3.list-manage.com/track/click?u=62bfe9ee0aac9031ce759a139&id=a1642d6007&e=e3c0df79a8>
 
 ‐---------------------------
 

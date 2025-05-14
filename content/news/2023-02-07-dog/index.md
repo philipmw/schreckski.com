@@ -9,7 +9,7 @@ If you don't have a suitable ski dog, then delete. But if you're skijoring curio
 
 The Nordic sport of skijoring brings four-legged friends into the fold for a day of cross-country skiing. Here's what you need to know to give the sport a try.
 
-https://www.seattletimes.com/life/outdoors/want-to-take-the-dog-cross-country-skiing-try-this-nordic-winter-sport/
+<https://www.seattletimes.com/life/outdoors/want-to-take-the-dog-cross-country-skiing-try-this-nordic-winter-sport/>
 
 If I can't Ski, let's go Biking,
 

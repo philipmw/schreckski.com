@@ -10,7 +10,7 @@ If you are looking for new equipment, start looking now as we are seeing similar
 
 First, Order your Sno-Park Pass online now as it can take 20 days to get it at:
 
- https://epermits.parks.wa.gov/Store/SNO/SnoChoice.aspx
+<https://epermits.parks.wa.gov/Store/SNO/SnoChoice.aspx>
 
 The bad news first: the snowmobile pass went up $10 to $50. XC Ski pass, up $40 to $120/vehicle. Still worth it as daily rates are ridiculously high! 12% more for grooming at Cabin Creek. Don't tell anyone but Cabin Creek is the best groomed the most days in our Seattle area. That's where most of my lessons are held except Tuesday when grooming is best at Crystal Springs. Once more snow falls, I can also teach at Lake Easton,  Suncadia and Salmon la Sac. 
 
@@ -28,7 +28,7 @@ Also a big thanks to my son James and my daughter Annie! They gave me lots of ad
 
 So here's my website:
 
-       Schreckski.com 
+       Schreckski.com
 
 It links to the other new thing that (again I didn't know how so a big thanks and acknowledgement to both Tatiana Daniels and Annie Schreck who each spent so many hours taping and editing my lessons for my own YouTube Channel.) It's brand new and is there for your comedic enjoyment. If you're interested in a lesson customized to Your needs, let me know.
 

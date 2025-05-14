@@ -13,7 +13,7 @@ Note that they probably have taken good care of the kick and glide sections of t
 
 Also, The snow has been very abrasive and dirty with the polar vortex and lack of new snow for this past week or so.  About 50 miles is all you can expect from your hot wax and your skins need to be cleaned and prepped at least every 3rd session and ideally daily! I can help if you need it.
 
-https://youtu.be/0uXF3kiHB8Q
+<https://youtu.be/0uXF3kiHB8Q>
 
 Schreckski.com 
 

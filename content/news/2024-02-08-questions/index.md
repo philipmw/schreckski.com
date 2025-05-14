@@ -1,5 +1,5 @@
 ---
-title: #1 and #2 Questions I get from my fellow XC skiers
+title: Number 1 and 2 Questions I get from my fellow XC skiers
 date: 2024-02-08T08:34-0800
 ---
 Hi XC Skiers,
@@ -24,7 +24,7 @@ Cabin has the lower trails (12 k including The Road, Viking,  Berg and sometimes
 Tuesday:
 P2C Trail (unless avy danger)
 Cabin lower trails (unless they don't; always check the Cabin website before going.
-https://www.kongsbergers.org/GroomingReport  )
+<https://www.kongsbergers.org/GroomingReport>  )
 Most skiers take the day off as we used to never get any grooming on Tuesdays! 
 8 am at Hyak or 9 am at Crystal Springs SnoParks to reach the P2C. 
 Tuesday is my day off from teaching so; If you want to free ski with me,  let me know. I usually start skate skiing at daybreak at Cabin Creek to get first tracks.
@@ -51,7 +51,7 @@ Hoards of sledders at Hyak. Pick your poison and get up early if you want a park
 
 I have availability on Wednesdays and Thursdays in February and the other days open in March if you want a tune-up lesson this season. Email me your preferred dates.
 
-Here's my Website Schreckski.com 
+Here's my Website <https://schreckski.com>
 
 If you want to try something else that's a longer drive/multi day trip, and there's enough snow, Lake Easton SP SnoPark and Suncadia Ski Trails are groomed every day it snows and there's enough snowpack. For a fun out of the way vacation,  my first pick is the Methow Valley,  2nd Plain, and 3rd, Leavenworth ski trails. 
 

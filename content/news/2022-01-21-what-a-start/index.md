@@ -31,7 +31,7 @@ The fundamentals for Classic skiing, such as: ideal body position, weight transf
 
 The YouTube video below does a great job showing this (thanks Chris Chu for sharing)
 Watch "Thinking about learning to skate on cross country skis? Watch this video first." on YouTube:
-https://youtu.be/f9uxeoemb5Y
+<https://youtu.be/f9uxeoemb5Y>
 
 2. Why is the ski trail grooming icy?
 
