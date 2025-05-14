@@ -8,17 +8,20 @@ layout: layouts/base.njk
 </style>
 <div class="read">
 <a href="/"><img src="/graphics/favicon-360x360.png" alt="Schreck" style="width: 90px; height: 90px; margin-top: 1em;"/></a>
-<h1 style="display: inline">News from Schreck's waxing bench</h1>
+<h1 style="display: inline">
+  <a style="text-decoration: none; color: black;" href="/news">News from Schreck's waxing bench</a>
+</h1>
 
-<h2>{{ title }}</h2>
+<h2>
+  <time class="newsitem-date newsitem-month-{{ page.date | readableDate("MM") }}"
+        style="vertical-align: middle"
+        datetime="{{ page.date | htmlDateString }}">
+    {{ page.date | readableDate("LLL yyyy") }}</time>
+  {{ title }}
+</h2>
 
-<ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %}
-</ul>
+
+
 </div>
 
 <div id="newsletter-content" class="read">

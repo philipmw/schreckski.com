@@ -92,10 +92,69 @@ table#schedule-table tr.day-off td {
     background-color: silver;
 }
 
-ol.postlist li {
+ul li, ol li {
     padding: 0.3em;
+}
+
+ol.newslist li {
+    list-style-type: none;
 }
 
 p#newsreader-subscribe {
     font-size: smaller;
+}
+
+time.newsitem-date {
+    border-radius: 0.2em;
+    padding: 0.2em 0.4em;
+    font-size: 14pt;
+}
+
+time.newsitem-month-01 {
+    color: white;
+    background-color: #38509e;
+}
+time.newsitem-month-02 {
+    color: white;
+    background-color: #2939a8;
+}
+time.newsitem-month-03 {
+    color: white;
+    background-color: #3d63b3;
+}
+time.newsitem-month-04 {
+    color: black;
+    background-color: #40a36a;
+}
+time.newsitem-month-05 {
+    color: black;
+    background-color: #6da73c;
+}
+time.newsitem-month-06 {
+    color: black;
+    background-color: #83ce44;
+}
+time.newsitem-month-07 {
+    color: black;
+    background-color: #d4ce37;
+}
+time.newsitem-month-08 {
+    color: black;
+    background-color: #f3c638;
+}
+time.newsitem-month-09 {
+    color: black;
+    background-color: #be7624;
+}
+time.newsitem-month-10 {
+    color: white;
+    background-color: #7f4b10;
+}
+time.newsitem-month-11 {
+    color: white;
+    background-color: #5c5c5c;
+}
+time.newsitem-month-12 {
+    color: white;
+    background-color: #364d73;
 }
