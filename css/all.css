@@ -96,6 +96,11 @@ ul li, ol li {
     padding: 0.3em;
 }
 
+ol.newslist {
+    /* reduce indent from 40px to maximize reading space */
+    padding-left: 0.3em;
+}
+
 ol.newslist li {
     list-style-type: none;
 }
