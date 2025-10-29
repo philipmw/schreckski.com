@@ -237,17 +237,27 @@
 	</url>
 	
 	<url>
+		<loc>https://schreckski.com/news/2025/10/first-snow/</loc>
+		<lastmod>2025-10-28</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://schreckski.com/README/</loc>
+		<lastmod>2025-10-29</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://schreckski.com/</loc>
-		<lastmod>2025-06-15</lastmod>
+		<lastmod>2025-10-29</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://schreckski.com/news/</loc>
-		<lastmod>2025-06-15</lastmod>
+		<lastmod>2025-10-29</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://schreckski.com/feed.atom</loc>
-		<lastmod>2025-06-15</lastmod>
+		<lastmod>2025-10-29</lastmod>
 	</url>
 </urlset>
