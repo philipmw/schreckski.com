@@ -55,6 +55,9 @@ export default async function(eleventyConfig) {
       title: "Schreck's cross-country ski news",
       subtitle: "News from the waxing bench",
       base: "https://schreckski.com",
+      icon: "/graphics/favicon-360x360.png",
+      // waiting for https://github.com/11ty/eleventy-plugin-rss/pull/90 to land
+      // logo: "/graphics/blog-logo-2-1-ratio.jpg",
       author: {
         name: "Schreck",
         email: "schreckski@gmail.com",
