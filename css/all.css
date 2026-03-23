@@ -6,6 +6,12 @@ body {
     font-size: 20pt;
 }
 
+.aside {
+    color: #808080;
+    font-size: smaller;
+    font-style: italic;
+}
+
 .read {
     margin-left: 20pt;
     margin-right: 20pt;
