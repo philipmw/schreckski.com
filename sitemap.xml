@@ -272,22 +272,27 @@
 	</url>
 	
 	<url>
+		<loc>https://schreckski.com/news/2026/10/hi/</loc>
+		<lastmod>2026-10-02</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://schreckski.com/README/</loc>
-		<lastmod>2026-04-22</lastmod>
+		<lastmod>2026-10-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://schreckski.com/</loc>
-		<lastmod>2026-04-22</lastmod>
+		<lastmod>2026-10-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://schreckski.com/news/</loc>
-		<lastmod>2026-04-22</lastmod>
+		<lastmod>2026-10-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://schreckski.com/feed.atom</loc>
-		<lastmod>2026-04-22</lastmod>
+		<lastmod>2026-10-04</lastmod>
 	</url>
 </urlset>
